@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+    <title>Gestor de Tarefas</title>
+</head>
+<body>
+    <span id="no-task">Sem Tarefas</span>
+    <section class="conteiner-box">
+        <div class="conteiner">
+            <h1>Gestor de Tarefas</h1>
+            <div class="box-tasks">
+                
+
+
+            </div>
+            <div class="buttons-box">
+                <button class="buttons" id="new-task">Nova Tarefa</button>
+            </div>
+
+
+    </section>
+</div>
+<div id='fade' class='hide'></div>
+<div id='modal' class='hide'>
+    <div class="head-modal">
+        <h2>Nova Tarefa</h2>
+        <button id="bttn-save-task" onclick="saveNewTask()">Salvar</button>
+    </div>
+    <div class="body-modal">
+
+        <!-- Titulo da Tarefa -->
+        <div id="titleTaskBox">
+            <label for="titleTask">Titulo da Tarefa</label>
+            <input type="text" id="titleTask">
+        </div>
+        <!-- Descrição da Tarefa -->
+        <div id="desc-form-task">
+            <label for="newTasktxt">Descreva a Tarefa</label>
+            <textarea name="newTask" id="newTasktxt" cols="40" rows="13"></textarea>
+        </div>    
+        <!-- Prazos Tarefa -->
+        <div class="prazos" >
+            <input type="radio" name="prazos" id="prazoCurto" value="Curto">
+            <label for="prazoCurto">Curto</label>
+            <input type="radio" name="prazos" id="prazoMedio" value="Medio" >
+            <label for="prazoMedio">Medio</label>
+            <input type="radio" name="prazos" id="prazoLongo" value="Longo">
+            <label for="prazoLongo">longo</label>
+        </div> 
+
+    </div>
+
+</div>
+</body>
+</html>
